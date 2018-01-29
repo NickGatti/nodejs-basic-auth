@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Login + Reg</h3>
+    <h5>Register:</h5>
+    <form action="/register" method="post">
+      <input type="text" name="name" placeholder="Name">
+      <input type="email" name="email" placeholder="Email">
+      <input type="number" name="age" placeholder="Age">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit">
+    </form>
+    <hr>
+    <h5>Login:</h5>
+    <form action="/login" method="post">
+      <input type="email" name="email" placeholder="email">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit">
+    </form>
+    <p style="color:red;"><%=error%></p>
+  </body>
+</html>
